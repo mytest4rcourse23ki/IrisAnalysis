@@ -38,7 +38,7 @@ iris |>
   ggplot(aes(Species, Sepal.Length, 
              fill = Species)) + 
   geom_boxplot() + 
-  stat_summary(fun.y = mean, 
+  stat_summary(fun = mean, 
                geom = "point", 
                shape = 5, 
                size = 4) + 
