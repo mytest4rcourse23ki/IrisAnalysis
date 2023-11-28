@@ -1,10 +1,30 @@
-# Install packages:
+# Initialize renv (Only once when creating script):
+# renv::init()
+# Check status (Anytime):
+# renv::status()
+# Install packages (Only once when creating script?):
 # renv::install(c("tidyverse", "GGally"))
+# Check status (Anytime):
+# renv::status()
+# Take snapshot of versions (Only once when creating script):
+# renv::snapshot()
+# Check status (Anytime):
+# renv::status()
 # Load packages:
 library(tidyverse)
 library(GGally)
-# Take snapshot of versions:
+# Check status (Anytime):
+# renv::status()
+# Take snapshot of versions (Only once when creating script):
 # renv::snapshot()
+# Check status (Anytime):
+# renv::status()
+# Activate renv (When?...)
+# renv::activate()
+# Restore packages to versions in lockfile (Only once when runnung script):
+# renv::restore()
+# Check status (Anytime):
+# renv::status()
 
 # Load data:
 data(iris)
@@ -88,3 +108,15 @@ iris |>
           legend = 3) + 
   labs(title = "Dimensions and their Relationships")
 
+# Check status (Anytime):
+# renv::status()
+# Update packages (Only once when creating script):
+# renv::update()
+# Check status (Anytime):
+# renv::status()
+# Take snapshot of versions (Only once when creating script):
+# renv::snapshot()
+# Check status (Anytime):
+# renv::status()
+
+# need to commit renv.lock, .Rprofile, renv/settings.json and renv/activate.R to version control
