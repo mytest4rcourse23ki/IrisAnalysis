@@ -4,6 +4,7 @@ library(GGally)
 
 # Load data:
 data(iris)
+
 # Explore Data:
 head(iris) # First 6 rows of dataset
 summary(iris) # Simple summary statistics overview of all variables
@@ -15,13 +16,12 @@ iris <-
   as_tibble()
 
 # Manipulate data
-
 # Compute mean of Sepal/Petal Length/Width for each Species:
 iris |> 
   group_by(Species) |> 
   summarize(across(everything(), mean))
 
-# Data Visualization with ggplot2
+# Some data visualizations with ggplot2...
 
 # Scatter-pLots of Sepal Width vs Length by Species:
 iris |> 
