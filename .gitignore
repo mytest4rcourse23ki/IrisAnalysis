@@ -50,7 +50,4 @@ rsconnect/
 
 # Additional:
 *.Rproj
-# renv
-# Need renv/settings.json and renv/activate.R.
-# No need to ignore renv-folder: renv creates its own .gitignore in renv-folder.
 
